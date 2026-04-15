@@ -1,0 +1,13 @@
+services:
+  pipeline:
+    build: .
+    image: elderly-food-vulnerability:latest
+    container_name: efv_pipeline
+    working_dir: /app
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./config:/app/config
+    environment:
+      PYTHONHASHSEED: "42"
+    command: ["python", "run.py", "--config", "config/settings.yaml"]
