@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data artefacts (do not commit heavy data)
+data/interim/*
+data/processed/*
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Raw data that is large or API-licensed
+data/raw/*.zip
+data/raw/*_meta.json
+# Master Plan layer is ~181 MB (exceeds GitHub 100 MB limit)
+data/raw/MasterPlan2025LandUseLayer.geojson
+# OD passenger volume files (large, API-licensed from LTA DataMall)
+data/raw/od_bus.csv
+data/raw/od_train.csv
+
+# Outputs: keep folder structure but not generated files
+outputs/figures/*
+outputs/tables/*
+outputs/models/*
+outputs/logs/*
+!outputs/figures/.gitkeep
+!outputs/tables/.gitkeep
+!outputs/models/.gitkeep
+!outputs/logs/.gitkeep
+
+# Secrets and local overrides
+.env
+config/local.yaml
