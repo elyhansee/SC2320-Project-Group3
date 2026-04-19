@@ -1,0 +1,10 @@
+feature,importance
+transit_access_score,0.2551194620682911
+accessibility_support_score,0.21351859255383088
+nearest_supermarket_km,0.16467343747687851
+food_amenity_count_log,0.12083388143725003
+elderly_pct,0.08102423694782947
+nearest_hawker_km,0.06677036396526419
+elderly_density_log,0.04802111502464481
+nearest_market_km,0.04096108455359108
+food_amenity_diversity,0.009077825972420012

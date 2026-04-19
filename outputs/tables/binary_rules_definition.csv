@@ -1,0 +1,13 @@
+item,source_column,threshold,description
+high_elderly_share,elderly_pct,value >= q66 = 0.191,Subzone in the top tier of elderly population share.
+high_elderly_density,elderly_density,value >= q66 = 3326.557,Top tier of elderly residents per km2.
+poor_food_access,nearest_food_km,value >= q66 = 0.384,Top tier of distance to nearest food amenity.
+rich_food_access,food_access_score,value >= q66 = 0.281,Top tier of composite food access score.
+poor_transit_access,transit_access_score,value <= q34 = 0.048,Bottom tier of transit access score.
+rich_transit_access,transit_access_score,value >= q66 = 0.628,Top tier of transit access score.
+rich_accessibility_support,accessibility_support_score,value >= q66 = 0.669,Top tier of barrier-free accessibility support.
+poor_accessibility_support,accessibility_support_score,value <= q34 = 0.113,Bottom tier of barrier-free accessibility support.
+hawker_present,hawker_count,value >= 1.000,At least one hawker centre within the configured buffer.
+supermarket_present,supermarket_count,value >= 1.000,At least one supermarket within the configured buffer.
+market_present,market_count,value >= 1.000,At least one wet market within the configured buffer.
+diverse_food_environment,food_amenity_diversity,value >= 2.000,At least N distinct food amenity types nearby.

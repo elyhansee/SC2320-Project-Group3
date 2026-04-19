@@ -1,0 +1,62 @@
+{
+  "n_subzones_total": 332,
+  "n_subzones_modelling": 219,
+  "feature_columns": [
+    "elderly_pct",
+    "elderly_density_log",
+    "nearest_hawker_km",
+    "nearest_supermarket_km",
+    "nearest_market_km",
+    "food_amenity_count_log",
+    "food_amenity_diversity",
+    "transit_access_score",
+    "accessibility_support_score"
+  ],
+  "apriori": {
+    "min_support": 0.05,
+    "min_confidence": 0.5,
+    "min_lift": 1.1,
+    "n_itemsets": 244,
+    "n_rules": 728
+  },
+  "clustering": {
+    "final_algorithm": "agglomerative",
+    "final_k": 2,
+    "metrics": {
+      "noise_frac": 0.0,
+      "silhouette": 0.3844690962250937,
+      "davies_bouldin": 1.1044179841452295,
+      "calinski_harabasz": 77.94951650139184
+    },
+    "stability": {
+      "mean_ari": 0.8397180951985078,
+      "std_ari": 0.10623386999868961,
+      "n_pairs": 29
+    },
+    "size_balance": {
+      "min": 27,
+      "max": 192,
+      "mean": 109.5,
+      "n_clusters": 2
+    }
+  },
+  "risk_model": {
+    "high_risk_quantile": 0.75,
+    "n_high_risk": 55,
+    "rf_test_metrics": {
+      "accuracy": 0.9272727272727272,
+      "precision": 0.8125,
+      "recall": 0.9285714285714286,
+      "f1": 0.8666666666666667,
+      "roc_auc": 0.9860627177700348
+    },
+    "rf_cv_metrics": {
+      "cv_accuracy_mean": 0.8858350951374208,
+      "cv_accuracy_std": 0.032158595655763726,
+      "cv_f1_mean": 0.7571177944862155,
+      "cv_f1_std": 0.07056250218356108,
+      "cv_roc_auc_mean": 0.9557162534435262,
+      "cv_roc_auc_std": 0.01275053626216832
+    }
+  }
+}

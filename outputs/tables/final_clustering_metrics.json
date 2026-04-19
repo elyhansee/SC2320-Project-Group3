@@ -1,0 +1,15 @@
+{
+  "final": {
+    "noise_frac": 0.0,
+    "silhouette": 0.3844690962250937,
+    "davies_bouldin": 1.1044179841452295,
+    "calinski_harabasz": 77.94951650139184
+  },
+  "stability": {
+    "mean_ari": 0.8397180951985078,
+    "std_ari": 0.10623386999868961,
+    "n_pairs": 29
+  },
+  "algorithm": "agglomerative",
+  "k": 2
+}
